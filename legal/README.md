@@ -12,13 +12,13 @@ Static **Privacy Policy** and **Terms of Use** for the goallll iOS app. Deployed
 
 Replace these placeholders in `privacy/index.html` and `terms/index.html`:
 
-| Placeholder | Example |
-|-------------|---------|
-| `[COMPANY_NAME]` | Your legal entity name |
-| `[CONTACT_EMAIL]` | `support@worldcuptrackerapp.com` |
+| Placeholder | Value |
+|-------------|-------|
 | `[WEBSITE_DOMAIN]` | `worldcuptrackerapp.com` |
 | `[COUNTRY/JURISDICTION]` | e.g. `Netherlands` or `State of Delaware, USA` |
 | `[EFFECTIVE_DATE]` | Official effective date |
+
+Already set: **Damas Technologies LLC**, **hi@damastechnologies.com**. Bundle ID is intentionally omitted from public legal pages.
 
 **Have a qualified attorney review** both documents before submission. Drafts include a visible disclaimer.
 
