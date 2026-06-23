@@ -19,7 +19,58 @@ npm run build
 npm run preview
 ```
 
-Deploy the `dist/` folder to any static host (Netlify, Vercel, GitHub Pages, S3, etc.).
+Deploy the `dist/` folder to any static host, or use **GitHub Pages** (configured in this repo — see below).
+
+## GitHub Pages + custom domain (`worldcuptrackerapp.com`)
+
+This repo deploys automatically on every push to `main` via [`.github/workflows/deploy-pages.yml`](../.github/workflows/deploy-pages.yml).
+
+### 1. Enable GitHub Pages (one-time)
+
+1. Open **GitHub → repo → Settings → Pages**
+2. Under **Build and deployment → Source**, choose **GitHub Actions**
+3. After the first successful workflow run, under **Custom domain**, enter:
+   ```
+   worldcuptrackerapp.com
+   ```
+4. Enable **Enforce HTTPS** once DNS is verified (may take up to 24 hours)
+
+The domain is declared in [`public/CNAME`](public/CNAME) and copied into the build output.
+
+### 2. DNS at your registrar
+
+Point **worldcuptrackerapp.com** to GitHub Pages.
+
+**Apex domain** (`worldcuptrackerapp.com`) — add **four A records**:
+
+| Type | Name / Host | Value |
+|------|-------------|-------|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+
+**Optional `www` subdomain** — add a **CNAME record**:
+
+| Type | Name / Host | Value |
+|------|-------------|-------|
+| CNAME | `www` | `mdo91.github.io` |
+
+Then in GitHub Pages settings, set the primary domain to `worldcuptrackerapp.com` (recommended) so `www` redirects to apex.
+
+### 3. Verify
+
+- Actions tab: workflow **Deploy landing to GitHub Pages** should be green
+- Visit [https://worldcuptrackerapp.com](https://worldcuptrackerapp.com) after DNS propagates (often 15–60 minutes, up to 48 hours)
+
+### Manual deploy (alternative)
+
+```bash
+cd landing
+npm run build
+# upload dist/ to any static host
+```
+
 
 ## Project structure
 
