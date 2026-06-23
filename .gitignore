@@ -3,4 +3,4 @@ node_modules/
 dist/
 landing/node_modules/
 landing/dist/
-landing/public/
+landing/public/src/
