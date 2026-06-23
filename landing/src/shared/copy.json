@@ -75,7 +75,7 @@
   "footerLinks": [
     { "label": "Privacy Policy", "href": "/privacy/" },
     { "label": "Terms of Use", "href": "/terms/" },
-    { "label": "Support", "href": "mailto:hi@damastechnologies.com" },
+    { "label": "Contact Us", "href": "/contact/" },
     { "label": "App Store", "href": "#" }
   ]
 }

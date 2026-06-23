@@ -7,6 +7,7 @@ Static **Privacy Policy** and **Terms of Use** for the goallll iOS app. Deployed
 | Privacy Policy | https://worldcuptrackerapp.com/privacy/ |
 | Terms of Use | https://worldcuptrackerapp.com/terms/ |
 | Legal hub | https://worldcuptrackerapp.com/legal/ |
+| Contact Us | https://worldcuptrackerapp.com/contact/ |
 
 ## Customize before App Store submission
 
