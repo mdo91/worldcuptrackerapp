@@ -29,8 +29,6 @@ body { font-family: var(--font-sans); background: var(--bg-dark); color: #e2e8f0
 }
 .cta-neon:hover { background: var(--brand-red); color: #fff; box-shadow: 0 0 40px rgba(255,56,60,0.5); }
 
-.neon-frame .phone-mockup__bezel { box-shadow: none; }
-
 .dark-features { padding: 4rem 0; }
 .neon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
 .neon-card {

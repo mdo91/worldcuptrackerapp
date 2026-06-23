@@ -1,4 +1,4 @@
-import { initPage } from '../../src/js/copy-loader.js';
+import { initPage } from './src/js/copy-loader.js';
 
 initPage().then((copy) => {
   document.querySelectorAll('.cta-neon').forEach((btn) => {
