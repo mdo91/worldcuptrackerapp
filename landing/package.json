@@ -4,7 +4,7 @@
   "private": true,
   "description": "Marketing landing page variations for goallll iOS app",
   "scripts": {
-    "predev": "mkdir -p public/src/img public/src/shared src/img && cp ../src/img/*.png src/img/ && cp ../src/img/*.png public/src/img/ && cp -r src/shared/* public/src/shared/",
+    "predev": "mkdir -p public/src/img public/src/shared public/src/css public/src/js public/privacy public/terms public/legal && cp ../src/img/*.png src/img/ && cp ../src/img/*.png public/src/img/ && cp -r src/shared/* public/src/shared/ && cp ../legal/src/css/legal.css public/src/css/ && cp ../legal/src/js/legal.js public/src/js/ && cp ../legal/privacy/index.html public/privacy/ && cp ../legal/terms/index.html public/terms/ && cp ../legal/index.html public/legal/",
     "dev": "npm run predev && vite",
     "build": "npm run predev && vite build",
     "preview": "vite preview"

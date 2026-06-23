@@ -73,8 +73,9 @@
   },
   "privacyText": "goallll may use optional, anonymized analytics to improve the app. We do not sell your data or use it for cross-app advertising.",
   "footerLinks": [
-    { "label": "Privacy Policy", "href": "#" },
-    { "label": "Support", "href": "#" },
+    { "label": "Privacy Policy", "href": "/privacy/" },
+    { "label": "Terms of Use", "href": "/terms/" },
+    { "label": "Support", "href": "mailto:support@worldcuptrackerapp.com" },
     { "label": "App Store", "href": "#" }
   ]
 }
