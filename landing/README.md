@@ -28,12 +28,10 @@ This repo deploys automatically on every push to `main` via [`.github/workflows/
 ### 1. Enable GitHub Pages (one-time)
 
 1. Open **GitHub → repo → Settings → Pages**
-2. Under **Build and deployment → Source**, choose **GitHub Actions**
-3. After the first successful workflow run, under **Custom domain**, enter:
-   ```
-   worldcuptrackerapp.com
-   ```
-4. Enable **Enforce HTTPS** once DNS is verified (may take up to 24 hours)
+2. Under **Build and deployment → Source**, choose **GitHub Actions** (not “Deploy from branch”)
+   - If set to **main / (root)**, the site will show the repo README instead of the landing page
+3. Under **Custom domain**, enter: `worldcuptrackerapp.com`
+4. Enable **Enforce HTTPS**
 
 The domain is declared in [`public/CNAME`](public/CNAME) and copied into the build output.
 
