@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goallll — Every World Cup moment. One app.</title>
+  <link rel="stylesheet" href="../../src/css/tokens.css">
+  <link rel="stylesheet" href="../../src/css/shared.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <header class="glass-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo" data-copy="appName">goallll</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav class="nav-links glass-pill">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero glass-hero">
+      <div class="container hero-wrap">
+        <div class="glass-card hero-card reveal">
+          <p class="tag" data-copy="tagline"></p>
+          <h1 data-copy="heroHeadline"></h1>
+          <p data-copy="heroSubheadline"></p>
+          <a href="#" class="app-store-btn app-store-btn--blue">Download on the App Store</a>
+        </div>
+        <div class="hero-phones reveal">
+          <div class="phone-stack">
+            <div class="phone-mockup"><div class="phone-mockup__bezel"><img src="/src/img/1.png" alt="Follow every match in real time with live score" loading="lazy"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="glass-features">
+      <div class="container">
+        <h2 class="section-title reveal">Everything you need</h2>
+        <div class="glass-grid">
+          <article class="glass-card reveal" data-feature="live-scores">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <div class="phone-mockup mini"><div class="phone-mockup__bezel"><img src="/src/img/1.png" alt="" loading="lazy"></div></div>
+          </article>
+          <article class="glass-card reveal" data-feature="daily-schedule">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <div class="phone-mockup mini"><div class="phone-mockup__bezel"><img src="/src/img/2.png" alt="" loading="lazy"></div></div>
+          </article>
+          <article class="glass-card reveal" data-feature="groups-standings">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <div class="phone-mockup mini"><div class="phone-mockup__bezel"><img src="/src/img/3.png" alt="" loading="lazy"></div></div>
+          </article>
+          <article class="glass-card reveal" data-feature="match-previews">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <div class="phone-mockup mini"><div class="phone-mockup__bezel"><img src="/src/img/4.png" alt="" loading="lazy"></div></div>
+          </article>
+          <article class="glass-card reveal" data-feature="my-team">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <div class="phone-mockup mini"><div class="phone-mockup__bezel"><img src="/src/img/5.png" alt="" loading="lazy"></div></div>
+          </article>
+          <article class="glass-card reveal" data-feature="match-stats">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <div class="phone-mockup mini"><div class="phone-mockup__bezel"><img src="/src/img/6.png" alt="" loading="lazy"></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="glass-how">
+      <div class="container glass-card reveal">
+        <h2 class="section-title">How it works</h2>
+        <div data-slot="steps" class="steps-inline"></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="glass-pricing">
+      <div class="container glass-card pricing-glass reveal">
+        <h2 class="section-title">Pricing</h2>
+        <p data-copy="pricing.trialText"></p>
+        <p data-copy="pricing.monthlyText"></p>
+        <p class="legal" data-copy="pricing.legalText"></p>
+        <a href="#" class="app-store-btn app-store-btn--blue">Download on the App Store</a>
+      </div>
+    </section>
+
+    <section class="glass-privacy"><div class="container reveal"><p data-copy="privacyText"></p></div></section>
+  </main>
+
+  <footer class="glass-footer">
+    <div class="container footer-inner">
+      <span data-copy="appName"></span>
+      <nav class="footer-links" data-slot="footer-links"></nav>
+    </div>
+  </footer>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

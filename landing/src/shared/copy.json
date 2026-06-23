@@ -1,0 +1,80 @@
+{
+  "appName": "goallll",
+  "tagline": "World Cup live scores, your way",
+  "heroHeadline": "Every World Cup moment. One app.",
+  "heroSubheadline": "Live scores, group standings, match previews, and a personalized feed for your nation — all in one beautiful iOS app.",
+  "ctaPrimary": "Download on the App Store",
+  "ctaSecondary": "See how it works",
+  "features": [
+    {
+      "id": "live-scores",
+      "title": "Live Scores",
+      "description": "Follow every match in real time with goal alerts and minute-by-minute updates. Never miss a decisive moment.",
+      "image": "/src/img/1.png",
+      "alt": "Follow every match in real time with live score"
+    },
+    {
+      "id": "daily-schedule",
+      "title": "Daily Schedule",
+      "description": "Browse the full tournament calendar day by day. See kickoff times, venues, and what's on today.",
+      "image": "/src/img/2.png",
+      "alt": "Browse the full tournament calendar day by day"
+    },
+    {
+      "id": "groups-standings",
+      "title": "Groups & Standings",
+      "description": "Track group tables with points, goal difference, and qualification zones at a glance.",
+      "image": "/src/img/3.png",
+      "alt": "Track group tables and qualification zones"
+    },
+    {
+      "id": "match-previews",
+      "title": "Match Previews",
+      "description": "Dive into lineups, head-to-head history, and pre-match stats before kickoff.",
+      "image": "/src/img/4.png",
+      "alt": "Dive into lineup"
+    },
+    {
+      "id": "my-team",
+      "title": "My Team",
+      "description": "Pick your nation and get a personalized feed of fixtures, results, and standings.",
+      "image": "/src/img/5.png",
+      "alt": "Pick your nation to get personalized feed of fixtures"
+    },
+    {
+      "id": "match-stats",
+      "title": "Match Stats",
+      "description": "Explore detailed lineup and head-to-head stats for every match in the tournament.",
+      "image": "/src/img/6.png",
+      "alt": "Dive into lineup and head-to-head stats for every match"
+    }
+  ],
+  "howItWorks": [
+    {
+      "step": 1,
+      "title": "Download goallll",
+      "description": "Get the app free from the App Store and open it before kickoff."
+    },
+    {
+      "step": 2,
+      "title": "Pick your nation",
+      "description": "Choose your team on the My Team tab for a personalized fixtures and results feed."
+    },
+    {
+      "step": 3,
+      "title": "Follow the tournament",
+      "description": "Track live scores, groups, and match previews throughout the World Cup."
+    }
+  ],
+  "pricing": {
+    "trialText": "Start with a 3-day free trial (for eligible new subscribers).",
+    "monthlyText": "goallll Premium — $2.99/month after trial. Unlock full tournament access, advanced stats, and an ad-free experience.",
+    "legalText": "Payment is charged to your Apple ID at confirmation of purchase. Subscription automatically renews unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in Settings > Apple ID > Subscriptions."
+  },
+  "privacyText": "goallll may use optional, anonymized analytics to improve the app. We do not sell your data or use it for cross-app advertising.",
+  "footerLinks": [
+    { "label": "Privacy Policy", "href": "#" },
+    { "label": "Support", "href": "#" },
+    { "label": "App Store", "href": "#" }
+  ]
+}

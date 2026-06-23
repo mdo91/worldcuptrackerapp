@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goallll — Every World Cup moment. One app.</title>
+  <link rel="stylesheet" href="../../src/css/tokens.css">
+  <link rel="stylesheet" href="../../src/css/shared.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sticky-cta" id="sticky-cta">
+    <span data-copy="appName">goallll</span>
+    <a href="#" class="sticky-btn app-store-btn app-store-btn--blue">Download</a>
+  </div>
+
+  <header class="conv-header">
+    <a href="../../index.html" class="logo" data-copy="appName">goallll</a>
+    <a href="#" class="header-cta app-store-btn app-store-btn--blue">Download on the App Store</a>
+  </header>
+
+  <main>
+    <section class="conv-hero">
+      <div class="container conv-hero-grid">
+        <div class="conv-copy reveal">
+          <h1 data-copy="heroHeadline"></h1>
+          <p data-copy="heroSubheadline"></p>
+          <a href="#" class="conv-cta-primary app-store-btn app-store-btn--blue">Download on the App Store</a>
+        </div>
+        <div class="conv-pricing-card reveal" id="pricing">
+          <h2>Start free today</h2>
+          <p class="trial-big" data-copy="pricing.trialText"></p>
+          <p data-copy="pricing.monthlyText"></p>
+          <p class="legal" data-copy="pricing.legalText"></p>
+          <a href="#" class="conv-cta-primary app-store-btn">Download on the App Store</a>
+        </div>
+      </div>
+      <div class="container conv-phone reveal">
+        <div class="phone-mockup"><div class="phone-mockup__bezel">
+          <img src="/src/img/1.png" alt="Follow every match in real time with live score" loading="lazy">
+        </div></div>
+      </div>
+    </section>
+
+    <section class="conv-mid-cta">
+      <div class="container center">
+        <p>Ready for kickoff?</p>
+        <a href="#" class="conv-cta-primary app-store-btn app-store-btn--red">Download on the App Store</a>
+      </div>
+    </section>
+
+    <section id="features" class="conv-features">
+      <div class="container">
+        <div class="conv-feature-list">
+          <article class="conv-feat reveal" data-feature="live-scores">
+            <div class="phone-mockup small"><div class="phone-mockup__bezel"><img src="/src/img/1.png" alt="" loading="lazy"></div></div>
+            <div><h3 data-slot="title"></h3><p data-slot="desc"></p></div>
+          </article>
+          <article class="conv-feat reveal" data-feature="daily-schedule">
+            <div class="phone-mockup small"><div class="phone-mockup__bezel"><img src="/src/img/2.png" alt="" loading="lazy"></div></div>
+            <div><h3 data-slot="title"></h3><p data-slot="desc"></p></div>
+          </article>
+          <article class="conv-feat reveal" data-feature="groups-standings">
+            <div class="phone-mockup small"><div class="phone-mockup__bezel"><img src="/src/img/3.png" alt="" loading="lazy"></div></div>
+            <div><h3 data-slot="title"></h3><p data-slot="desc"></p></div>
+          </article>
+          <article class="conv-feat reveal" data-feature="match-previews">
+            <div class="phone-mockup small"><div class="phone-mockup__bezel"><img src="/src/img/4.png" alt="" loading="lazy"></div></div>
+            <div><h3 data-slot="title"></h3><p data-slot="desc"></p></div>
+          </article>
+          <article class="conv-feat reveal" data-feature="my-team">
+            <div class="phone-mockup small"><div class="phone-mockup__bezel"><img src="/src/img/5.png" alt="" loading="lazy"></div></div>
+            <div><h3 data-slot="title"></h3><p data-slot="desc"></p></div>
+          </article>
+          <article class="conv-feat reveal" data-feature="match-stats">
+            <div class="phone-mockup small"><div class="phone-mockup__bezel"><img src="/src/img/6.png" alt="" loading="lazy"></div></div>
+            <div><h3 data-slot="title"></h3><p data-slot="desc"></p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="conv-how">
+      <div class="container">
+        <h2 class="section-title reveal">How it works</h2>
+        <div data-slot="steps"></div>
+        <div class="center" style="margin-top:2rem">
+          <a href="#" class="conv-cta-primary app-store-btn app-store-btn--blue">Download on the App Store</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="conv-final-cta">
+      <div class="container center reveal">
+        <h2>Don't miss a goal</h2>
+        <p data-copy="pricing.trialText"></p>
+        <a href="#" class="conv-cta-primary app-store-btn app-store-btn--red">Download on the App Store</a>
+      </div>
+    </section>
+
+    <section class="conv-privacy"><div class="container center reveal"><p data-copy="privacyText"></p></div></section>
+  </main>
+
+  <footer class="conv-footer">
+    <div class="container footer-row">
+      <span data-copy="appName"></span>
+      <nav class="footer-links" data-slot="footer-links"></nav>
+    </div>
+  </footer>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goallll — Every World Cup moment. One app.</title>
+  <link rel="stylesheet" href="../../src/css/tokens.css">
+  <link rel="stylesheet" href="../../src/css/shared.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="fan-header">
+    <a href="../../index.html" class="logo" data-copy="appName">goallll</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#heart">Why fans love it</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="fan-hero">
+      <div class="container fan-hero-inner reveal">
+        <p class="fan-quote">"This is <em>our</em> tournament."</p>
+        <h1 data-copy="heroHeadline"></h1>
+        <p class="fan-sub" data-copy="heroSubheadline"></p>
+        <a href="#" class="fan-cta app-store-btn app-store-btn--red">Download on the App Store</a>
+      </div>
+      <div class="fan-hero-visual reveal">
+        <div class="phone-mockup"><div class="phone-mockup__bezel">
+          <img src="/src/img/5.png" alt="Pick your nation to get personalized feed of fixtures" loading="lazy">
+        </div></div>
+      </div>
+    </section>
+
+    <section id="heart" class="fan-features">
+      <div class="container">
+        <h2 class="fan-heading reveal">Wear your colors. Never miss a moment.</h2>
+
+        <div class="fan-block reveal" data-feature="my-team">
+          <div class="fan-block-text">
+            <span class="heart">❤️</span>
+            <h3 data-slot="title"></h3>
+            <p data-slot="desc"></p>
+          </div>
+          <div class="phone-mockup"><div class="phone-mockup__bezel"><img src="/src/img/5.png" alt="" loading="lazy"></div></div>
+        </div>
+
+        <div class="fan-block reverse reveal" data-feature="live-scores">
+          <div class="fan-block-text">
+            <span class="heart">⚽</span>
+            <h3 data-slot="title"></h3>
+            <p data-slot="desc"></p>
+          </div>
+          <div class="phone-mockup"><div class="phone-mockup__bezel"><img src="/src/img/1.png" alt="" loading="lazy"></div></div>
+        </div>
+
+        <div class="fan-block reveal" data-feature="daily-schedule">
+          <div class="fan-block-text">
+            <span class="heart">📅</span>
+            <h3 data-slot="title"></h3>
+            <p data-slot="desc"></p>
+          </div>
+          <div class="phone-mockup"><div class="phone-mockup__bezel"><img src="/src/img/2.png" alt="" loading="lazy"></div></div>
+        </div>
+
+        <div class="fan-block reverse reveal" data-feature="groups-standings">
+          <div class="fan-block-text">
+            <span class="heart">📊</span>
+            <h3 data-slot="title"></h3>
+            <p data-slot="desc"></p>
+          </div>
+          <div class="phone-mockup"><div class="phone-mockup__bezel"><img src="/src/img/3.png" alt="" loading="lazy"></div></div>
+        </div>
+
+        <div class="fan-block reveal" data-feature="match-previews">
+          <div class="fan-block-text">
+            <span class="heart">👥</span>
+            <h3 data-slot="title"></h3>
+            <p data-slot="desc"></p>
+          </div>
+          <div class="phone-mockup"><div class="phone-mockup__bezel"><img src="/src/img/4.png" alt="" loading="lazy"></div></div>
+        </div>
+
+        <div class="fan-block reverse reveal" data-feature="match-stats">
+          <div class="fan-block-text">
+            <span class="heart">📈</span>
+            <h3 data-slot="title"></h3>
+            <p data-slot="desc"></p>
+          </div>
+          <div class="phone-mockup"><div class="phone-mockup__bezel"><img src="/src/img/6.png" alt="" loading="lazy"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="fan-how">
+      <div class="container">
+        <h2 class="fan-heading reveal">How it works</h2>
+        <div data-slot="steps" class="fan-steps"></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="fan-pricing">
+      <div class="container fan-pricing-box reveal">
+        <h2 class="fan-heading">Cheer louder with Premium</h2>
+        <p data-copy="pricing.trialText"></p>
+        <p data-copy="pricing.monthlyText"></p>
+        <p class="legal" data-copy="pricing.legalText"></p>
+        <a href="#" class="fan-cta app-store-btn app-store-btn--red">Download on the App Store</a>
+      </div>
+    </section>
+
+    <section class="fan-privacy"><div class="container reveal"><p data-copy="privacyText"></p></div></section>
+  </main>
+
+  <footer class="fan-footer">
+    <div class="container footer-inner">
+      <span data-copy="appName"></span>
+      <nav class="footer-links" data-slot="footer-links"></nav>
+    </div>
+  </footer>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

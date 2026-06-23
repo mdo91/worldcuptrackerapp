@@ -1,0 +1,56 @@
+body { font-family: var(--font-sans); background: #fff; }
+.narrow { max-width: 720px; margin-inline: auto; padding-inline: 1.25rem; }
+
+.timeline-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 1.25rem; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; background: #fff; z-index: 50;
+}
+.logo { font-weight: 800; text-decoration: none; color: var(--cta-blue); }
+.nav-links { display: flex; gap: 1.5rem; }
+.nav-links a { text-decoration: none; color: var(--text-secondary); font-size: 0.875rem; }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; }
+
+.timeline-intro { padding: 4rem 0 3rem; text-align: center; }
+.timeline-intro h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 1rem 0; line-height: 1.15; }
+.timeline-intro p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; }
+
+.timeline { position: relative; padding: 2rem 0 4rem; max-width: 900px; margin-inline: auto; }
+.timeline-line {
+  position: absolute; left: 50%; top: 0; bottom: 0; width: 3px;
+  background: linear-gradient(180deg, var(--cta-blue), var(--brand-red)); transform: translateX(-50%);
+}
+.timeline-item { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 1rem; align-items: start; margin-bottom: 4rem; position: relative; }
+.timeline-item .timeline-content { grid-column: 1; text-align: right; padding-right: 1rem; }
+.timeline-item .timeline-marker { grid-column: 2; width: 48px; height: 48px; background: #fff; border: 3px solid var(--cta-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; z-index: 1; justify-self: center; }
+.timeline-item.alt .timeline-content { grid-column: 3; text-align: left; padding-left: 1rem; padding-right: 0; }
+.timeline-item.alt .timeline-marker { grid-column: 2; }
+.timeline-content h3 { font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--cta-blue); }
+.timeline-content p { color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem; font-size: 0.95rem; }
+.timeline-content .phone-mockup { --phone-width: 200px; margin-inline: auto; }
+.timeline-item .timeline-content .phone-mockup { margin-left: auto; margin-right: 0; }
+.timeline-item.alt .timeline-content .phone-mockup { margin-left: 0; margin-right: auto; }
+
+.timeline-how { padding: 4rem 0; background: var(--bg-light); }
+.steps-vertical .step { display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start; }
+.steps-vertical .step-num { flex-shrink: 0; width: 32px; height: 32px; background: var(--brand-red); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem; }
+
+.timeline-pricing { padding: 4rem 0; text-align: center; }
+.timeline-pricing p { margin-bottom: 0.75rem; line-height: 1.6; }
+.timeline-pricing .legal { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1.5rem; }
+
+.timeline-privacy { padding: 2rem 0; text-align: center; font-size: 0.85rem; color: var(--text-secondary); }
+.timeline-footer { padding: 2rem 0; border-top: 1px solid #e2e8f0; }
+.footer-inner { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; font-size: 0.875rem; }
+.footer-links { display: flex; gap: 1.25rem; }
+.footer-links a { color: var(--text-secondary); text-decoration: none; }
+
+@media (max-width: 768px) {
+  .timeline-line { left: 24px; }
+  .timeline-item, .timeline-item.alt { grid-template-columns: 48px 1fr; }
+  .timeline-item .timeline-marker, .timeline-item.alt .timeline-marker { grid-column: 1; grid-row: 1; }
+  .timeline-item .timeline-content, .timeline-item.alt .timeline-content { grid-column: 2; text-align: left; padding: 0; }
+  .timeline-item .timeline-content .phone-mockup, .timeline-item.alt .timeline-content .phone-mockup { margin-left: 0; }
+  .nav-toggle { display: block; }
+  .nav-links { display: none; }
+  .nav-links.is-open { display: flex; flex-direction: column; position: absolute; top: 100%; right: 0; background: #fff; padding: 1rem; border: 1px solid #e2e8f0; }
+}

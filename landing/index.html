@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goallll — Every World Cup moment. One app.</title>
+  <meta name="description" content="goallll — World Cup live scores for iOS. Browse landing page variations or view the Dark Premium design.">
+  <meta name="theme-color" content="#0B1220">
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/shared.css">
+  <link rel="stylesheet" href="src/css/gallery.css">
+</head>
+<body>
+  <header class="gallery-header dark-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo neon">goallll</a>
+      <nav class="nav-links">
+        <a href="variations/04-dark-premium/index.html">Live site</a>
+        <a href="#variations">Variations</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="gallery-hero dark-hero">
+    <div class="glow glow-red" aria-hidden="true"></div>
+    <div class="glow glow-blue" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="neon-tag">World Cup live scores, your way</p>
+      <h1 class="neon-text">Every World Cup moment. <span class="neon">One app.</span></h1>
+      <p class="hero-sub">Live scores, group standings, match previews, and a personalized feed for your nation — all in one beautiful iOS app.</p>
+      <div class="hero-actions">
+        <a href="variations/04-dark-premium/index.html" class="cta-neon">View Dark Premium landing</a>
+        <a href="#variations" class="cta-ghost">Browse all 10 variations</a>
+      </div>
+      <div class="hero-device">
+        <div class="phone-mockup"><div class="phone-mockup__bezel">
+          <img src="/src/img/1.png" alt="Follow every match in real time with live score" loading="lazy">
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <main class="gallery-main" id="variations">
+    <h2 class="section-title neon-text">Landing variations</h2>
+    <p class="section-sub">10 distinct designs. Dark Premium is the project theme.</p>
+
+    <div class="filters" role="group" aria-label="Filter variations">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="light">Light</button>
+      <button class="filter-btn" data-filter="dark">Dark</button>
+      <button class="filter-btn" data-filter="cta">CTA-focused</button>
+    </div>
+    <div id="variation-grid" class="variation-grid"></div>
+  </main>
+
+  <footer class="gallery-footer dark-footer">
+    <div class="footer-inner">
+      <span class="neon">goallll</span>
+      <p>World Cup live scores for iOS</p>
+    </div>
+  </footer>
+
+  <script type="module" src="src/js/gallery.js"></script>
+</body>
+</html>

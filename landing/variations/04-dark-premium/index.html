@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goallll — Every World Cup moment. One app.</title>
+  <link rel="stylesheet" href="../../src/css/tokens.css">
+  <link rel="stylesheet" href="../../src/css/shared.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="dark-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo neon" data-copy="appName">goallll</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero dark-hero">
+      <div class="glow glow-red" aria-hidden="true"></div>
+      <div class="glow glow-blue" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="neon-tag" data-copy="tagline"></p>
+          <h1 data-copy="heroHeadline"></h1>
+          <p data-copy="heroSubheadline"></p>
+          <a href="#" class="cta-neon">Download on the App Store</a>
+        </div>
+        <div class="hero-device reveal">
+          <div class="phone-mockup neon-frame"><div class="phone-mockup__bezel">
+            <img src="/src/img/1.png" alt="Follow every match in real time with live score" loading="lazy">
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="dark-features">
+      <div class="container">
+        <h2 class="section-title neon-text reveal">Premium features</h2>
+        <div class="neon-grid">
+          <article class="neon-card reveal" data-feature="live-scores">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <img src="/src/img/1.png" alt="" loading="lazy" class="screenshot">
+          </article>
+          <article class="neon-card reveal" data-feature="daily-schedule">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <img src="/src/img/2.png" alt="" loading="lazy" class="screenshot">
+          </article>
+          <article class="neon-card reveal" data-feature="groups-standings">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <img src="/src/img/3.png" alt="" loading="lazy" class="screenshot">
+          </article>
+          <article class="neon-card reveal" data-feature="match-previews">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <img src="/src/img/4.png" alt="" loading="lazy" class="screenshot">
+          </article>
+          <article class="neon-card reveal" data-feature="my-team">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <img src="/src/img/5.png" alt="" loading="lazy" class="screenshot">
+          </article>
+          <article class="neon-card reveal" data-feature="match-stats">
+            <h3 data-slot="title"></h3><p data-slot="desc"></p>
+            <img src="/src/img/6.png" alt="" loading="lazy" class="screenshot">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="dark-how">
+      <div class="container">
+        <h2 class="section-title reveal">How it works</h2>
+        <div data-slot="steps" class="steps-neon"></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="dark-pricing">
+      <div class="container neon-card pricing-neon reveal">
+        <h2 class="section-title neon-text">Pricing</h2>
+        <p data-copy="pricing.trialText"></p>
+        <p data-copy="pricing.monthlyText"></p>
+        <p class="legal" data-copy="pricing.legalText"></p>
+        <a href="#" class="cta-neon">Download on the App Store</a>
+      </div>
+    </section>
+
+    <section class="dark-privacy"><div class="container reveal"><p data-copy="privacyText"></p></div></section>
+  </main>
+
+  <footer class="dark-footer">
+    <div class="container footer-inner">
+      <span class="neon" data-copy="appName"></span>
+      <nav class="footer-links" data-slot="footer-links"></nav>
+    </div>
+  </footer>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

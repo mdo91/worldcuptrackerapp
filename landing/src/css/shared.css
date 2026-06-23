@@ -1,0 +1,91 @@
+/* Shared components across variations */
+.phone-mockup {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-mockup__bezel {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  max-width: var(--phone-width);
+  width: 100%;
+}
+
+.phone-mockup__bezel img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.app-store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.5rem;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.app-store-btn span { display: flex; flex-direction: column; line-height: 1.2; }
+.app-store-btn small { font-size: 0.65rem; opacity: 0.9; }
+.app-store-btn strong { font-size: 1.1rem; }
+
+.app-store-btn:hover, .app-store-btn:focus-visible {
+  transform: scale(1.03);
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 3px;
+}
+
+.app-store-btn--blue { background: var(--cta-blue); }
+.app-store-btn--red { background: var(--brand-red); }
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.section-sub {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 600px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(16px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
